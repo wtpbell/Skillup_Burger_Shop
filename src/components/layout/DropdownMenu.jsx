@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { IoPersonCircle } from "react-icons/io5";
 
 function DropdownMenu() {
   const [navLinks, setNavLinks] = useState([]);
@@ -16,26 +17,24 @@ function DropdownMenu() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div className="container">
-          <a className="navbar-brand" href="#">
-          
-          </a>
-          <div class="btn-group">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-danger" >
+        <div className="container" >
+          {/* <a className="navbar-brand" href="#"></a> */}
+          <div className="btn-group">
             <button
               type="button"
-              class="btn btn-primary dropdown-toggle"
+              className="btn bg-danger dropdown-toggle"
               data-bs-toggle="dropdown"
               data-bs-display="static"
               aria-expanded="false"
             >
-              Menu
+            <IoPersonCircle size={25} style={{color: 'white'}}/>
             </button>
-            <ul class="dropdown-menu dropdown-menu-end">
+            <ul className="dropdown-menu dropdown-menu-end">
               {navLinks.map((d, i) => (
                 <li key={i}>
                   <Link to={d.path}>
-                    <button class="dropdown-item" type="button">
+                    <button className="dropdown-item" type="button">
                       {d.name}
                     </button>
                   </Link>

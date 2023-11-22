@@ -27,10 +27,22 @@
         text-align: center;
         margin-top: 2rem;
         float: right;
+        &:hover {
+          background-color: $reddark;
+        }
       }
     }
   }
 }
+
+  .resetCartBtn{
+    background: transparent;
+    border: none;
+    color: white;
+    &:hover {
+      background-color: $reddark;
+    }
+  }
 
 .cartItem {
   background-color: rgb(246, 246, 246);
