@@ -1,8 +1,6 @@
 // Write all the code here
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { IoPersonCircle } from "react-icons/io5";
-import { CiShoppingCart } from "react-icons/ci";
 import DropdownMenu from "./DropdownMenu";
 import { useContext } from "react";
 import { CartContext } from "../../context/cart";
